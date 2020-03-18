@@ -164,10 +164,13 @@ function processDuplicateFree(List,callback) {
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
 function lowerCaseStrings(strings) {
-  return   strings.forEach((arritem)=>{
-    return arritem.toLowerCase();
-    
+    let lowercase= [];
+    strings.forEach(arrayitem => {
+     
+     lowercase.push(arrayitem.toLowerCase());
+
   });
+  return lowercase;
 }
 
 /**
@@ -241,17 +244,11 @@ function removeApple(array) {
  * 
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
 */
-function stringSmash(array) {
-  
-  const map1 =array.reduce((item) => {
-    var var1 ="" ;
-    for (let i=0;i < array.length-1 ;i++){
-      return var1 = var1 +array[i];
-    }
-  } );
-  return var1;
-    
-  }
+function stringSmash(strings) {
+  return strings.reduce();
+}
+stringSmash(["a","b","c"]);
+
 
 
 // A local community center is holding a fund raising 5k fun run and has invited
@@ -269,9 +266,6 @@ function stringSmash(array) {
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
-function getFullNames(/* CODE HERE */) {
-  /* CODE HERE */
-}
 
 /**
  * ### Challenge `firstNamesAllCaps`
